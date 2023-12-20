@@ -17,7 +17,7 @@ function App() {
       userName: user,
       password: pass
     }
-    await fetch(`http://localhost:3000/api/users`, {
+    await fetch(`https://evergoalsserver.onrender.com/api/users`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ function App() {
       userName: user,
       password: pass
     }
-    await fetch('http://localhost:3000/api/users', {
+    await fetch('https://evergoalsserver.onrender.com/api/users', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -69,13 +69,13 @@ function App() {
   }
 
   const fetchGoals = async (id) => {
-    const res = await fetch(`http://localhost:3000/api/goal/${id}`)
+    const res = await fetch(`https://evergoalsserver.onrender.com/api/goal/${id}`)
     const data = await res.json()
     setGoals(data)
   }
 
   const getDetails = async (id) => {
-    const res = await fetch(`http://localhost:3000/api/goal/details/${id}`)
+    const res = await fetch(`https://evergoalsserver.onrender.com/api/goal/details/${id}`)
     const data = await res.json()
     setSingleGoal(data)
     setGoalId(id)
@@ -90,7 +90,7 @@ function App() {
     const goalData = {
       goalTitle: newGoal
     }
-    await fetch(`http://localhost:3000/api/goal/${userId}`, {
+    await fetch(`https://evergoalsserver.onrender.com/api/goal/${userId}`, {
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json'
@@ -120,7 +120,7 @@ function App() {
   }
 
   const delGoal = async (id) => {
-    const res = await fetch(`http://localhost:3000/api/goal/${id}`, {
+    const res = await fetch(`https://evergoalsserver.onrender.com/api/goal/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ function App() {
   }
 
   const addGoalDetail = async (goalData) => {
-    const res = await fetch(`http://localhost:3000/api/goal/details/${goalId}`, {
+    const res = await fetch(`https://evergoalsserver.onrender.com/api/goal/details/${goalId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
