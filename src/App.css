@@ -1,0 +1,112 @@
+#root {
+  width: 100vw;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url('./images/everGaol.webp');
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(149, 165, 166, 0.9);
+  border-radius: 8px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goal-card {
+  width: 95%;
+  border: 6px solid #95a5a6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  background-color: #34495e ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-card {
+  width: 95%;
+  border: 6px solid #95a5a6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  background-color: #34495e ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #34495e;
+}
+
+input::placeholder {
+  color: #95a5a6
+}
+
+button {
+  width: 195px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.special-button {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 1.8em;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
